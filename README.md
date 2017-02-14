@@ -29,3 +29,7 @@ cd pyxml_wider
 for my machine , it takes ~350 s.
 the shell will create WIDER_2016 directory  contains JPEGImages/Annotations
 
+5. after done the script
+you can use labelImg to see if it deals properly(This is god dame awesome) [ref](https://github.com/tzutalin/labelImg)
+
+![alt tag](https://raw.githubusercontent.com/penolove/WIDER_DataSet_4_faster_rcnn/master/WIDER.png)
