@@ -2,7 +2,9 @@
 
 ## step1 first download the dataset from WIDER dataset
 http://mmlab.ie.cuhk.edu.hk/projects/WIDERFace/
+
 Wider Face Training Images : WIDER_train.zip (~1.3GB)
+
 Face annotations : wider_face_split.zip (~6MB)
 
 ## step2 git clone repository from github
