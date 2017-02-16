@@ -87,7 +87,7 @@ def img2xml(path,objects,shape):
 
   
 # the annotation files path
-originalPics_folds=os.path.join("..","WIDER_train","images")
+originalPics_folds=os.path.join("..","WIDER_train","WIDER_train","images")
 
 if __name__=="__main__":
     # you need to modify the path_img below

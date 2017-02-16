@@ -7,17 +7,22 @@ http://mmlab.ie.cuhk.edu.hk/projects/WIDERFace/
 2. git clone repository from github
 ```
 git clone https://github.com/penolove/WIDER_DataSet_4_faster_rcnn.git
-
 ```
 
-3. unzip those zip and put it into folder, 
-check if your data put correctly
+3. put those zips and put it into folder WIDER_DataSet_4_faster_rcnn like this:
+![alt tag](https://raw.githubusercontent.com/penolove/WIDER_DataSet_4_faster_rcnn/master/WIDER.png)
+and then execute  (unzip and checksum)
 ```
-cd WIDER_DataSet_4_faster_rcnn
-user@localhost:~/Documents/WIDER_DataSet_4_faster_rcnn$ ls
-pyxml_wider  wider_face_split  WIDER_train
+./get_data.sh
 ```
-![alt tag](https://raw.githubusercontent.com/penolove/WIDER_DataSet_4_faster_rcnn/master/folders.png)
+if always checksum fail just directly
+```
+FILE=wider_face_split.zip
+unzip $FILE -d wider_face_split
+
+FILE=WIDER_train.zip
+unzip $FILE -d wider_face_split
+```
 
 
 
