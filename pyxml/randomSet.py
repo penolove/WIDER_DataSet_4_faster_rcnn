@@ -22,7 +22,7 @@ if __name__=='__main__':
     target_dir_Anno = os.path.join(target_dir,'Annotations')
 
     if not os.path.exists(target_dir):
-        print("DataSet doesn't exit, you should check if anno2xml.py runs properly")
+        print("[WIDER] DataSet doesn't exit, you should check if anno2xml.py runs properly")
         sys.exit(0)
 
     if not os.path.exists(target_dir_ImSets):
@@ -39,18 +39,18 @@ if __name__=='__main__':
     trainSize=int(len(xml_list)*trainRatio)
 
     #train
-    print "Training set creating..."
+    print "[WIDER] Training set creating..."
     f=open(os.path.join(target_dir_ImSets_Main , 'trainval.txt'),'w')
     for i in xml_list[:trainSize]:
         f.write(i+'\n')
     f.close()
-    print "Done!"
+    print "[WIDER] Done!"
 
     #test
-    print "Testing set creating..."
+    print "[WIDER] Testing set creating..."
     f=open(os.path.join(target_dir_ImSets_Main , 'test.txt'), 'w')
     for i in xml_list[trainSize:]:
         f.write(i+'\n')
     f.close()
-    print "Done!"
+    print "[WIDER] Done!"
 
